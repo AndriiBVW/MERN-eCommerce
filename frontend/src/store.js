@@ -6,13 +6,14 @@ import {
   poductDetailsReducer,
 } from "./reducers/productReducers";
 import { cartReducer } from "./reducers/cartReducers";
-import { userLoginReducer } from "./reducers/userRedusers";
+import { userLoginReducer, userRegisterReducer } from "./reducers/userRedusers";
 
 const reducer = combineReducers({
   productList: poductListReducer,
   productDetails: poductDetailsReducer,
   cart: cartReducer,
   userLogin: userLoginReducer,
+  userRegister: userRegisterReducer,
 });
 
 const cartItemsFromStorage = localStorage.getItem("cartItems")
